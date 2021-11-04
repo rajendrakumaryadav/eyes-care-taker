@@ -29,6 +29,6 @@ class caretaker:
                 message="""Watch away for 20 seconds.\nI will be back after \
 20 minuts.""",
             )
-            time.sleep(current_time + (20 * 60))
+            time.sleep(current_time + (2 * 60))
             time_moniter.reset_time()
             self.run(self)
