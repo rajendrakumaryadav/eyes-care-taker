@@ -11,11 +11,11 @@ class caretaker:
         notification.notify(
             title=title,
             message=message,
-            app_name="Caretaker",
-            timeout=10,
+            app_name="Eyes Caretaker",
+            timeout=5,
         )
 
     def run(self) -> None:
         while True:
-            self.notify("Caretaker", "Caretaker is running")
-            time.sleep(60)
+            self.notify("Caretaker", "Watch away from your screen")
+            time.sleep(10)

@@ -28,5 +28,9 @@ class app:
 
 
 if __name__ == "__main__":
-    app = app()
-    app.run()
+    try:
+        app = app()
+        app.run()
+    except KeyboardInterrupt:
+        print("\n\nExiting...")
+        exit(0)
