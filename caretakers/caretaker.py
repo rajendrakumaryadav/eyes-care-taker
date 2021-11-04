@@ -31,3 +31,4 @@ class caretaker:
             )
             time.sleep(current_time + (20 * 60))
             time_moniter.reset_time()
+            self.run(self)
