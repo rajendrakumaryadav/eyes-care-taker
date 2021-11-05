@@ -1,3 +1,4 @@
+import datetime
 import time
 
 
@@ -6,15 +7,19 @@ class time_moniter:
     # It is used to determine if the system is running for a long time.
     # It is used to determine if the system is running for a long time.
     def __init__(self) -> None:
-        self.start_time = time.time()  # Start time of the program
+        self.start_time = datetime.time()  # Start time of the program
         self.end_time = None
         self.elapsed_time = None   # 20 minutes
 
-    def start(self) -> float:
-        self.start_time = time.time()   # resetting start time
+    # get Current system time.
+    def get_current_time(self):
+        return datetime.datetime.now()
+
+    def start_t(self):
+        self.start_time = datetime.time()   # resetting start time
         return self.start_time
 
-    def end(self) -> float:
+    def end_t(self) -> float:
         self.end_time = time.time()
         return self.end_time
 

@@ -9,10 +9,16 @@ import caretakers.time_moniter as time_moniter
 class caretaker:
     def __init__(self) -> None:
         print("Instance created: Eyes Caretaker is running")
+        print(
+            f"Starting Time : {self.formatted_date_time(time_moniter.time_moniter.get_current_time(self))}")
         pass
 
-    def notify(self, title: str, message: str) -> None:
+        # Format given datetime as dd-mm-yyyy hh:mm:ss
+        # return datetime.strftime(datetime.now(), "%d-%m-%Y %H:%M:%S")
+    def formatted_date_time(self, current_time: str) -> str:
+        return current_time.strftime("%d-%m-%Y %H:%M:%S")
 
+    def notify(self, title: str, message: str) -> None:
         notification.notify(
             title=title,
             message=message,
