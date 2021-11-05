@@ -14,16 +14,16 @@ class app:
 
     def welcome_message(self):
         print(f"""
-        version: {caretakers.__version__}
-        author: {caretakers.__author__}
-        url: {caretakers.__url__}
+        Version: {caretakers.__version__}
+        Author: {caretakers.__author__}
+        Author's Git Profile: {caretakers.__url__}
         License: {caretakers.__license__}
 
         This application is made for eyes care taking...
         You screen will be blocked once you activate it.
         After, Each 20 min of slot you will be notified with message
-        and your screen will be blocked for next 20 seconds with a message
-        colored.red "Watch 20 meters aways to relax the eyes mascules"
+        and your screen will be blocked for next 20 seconds with a message.
+        "Watch 20 meter aways to relax the eyes mascules"
         """)
 
 
