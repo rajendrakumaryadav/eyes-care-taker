@@ -34,5 +34,5 @@ I will be back after 20 minuts.")
             time.sleep(60 * 20)  # 20 min
             time_moniter.time_moniter().reset_time()  # reset time
             print(
-                f"Time counter is resetting \
-                    {time_moniter.time_moniter.start()}")
+                f"Time counter is reseted at \
+                    {time_moniter.time_moniter.start_t()}")
