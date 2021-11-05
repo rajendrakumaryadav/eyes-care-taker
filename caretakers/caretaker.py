@@ -8,7 +8,7 @@ import caretakers.time_moniter as time_moniter
 
 class caretaker:
     def __init__(self) -> None:
-        # self.run()
+        print("Instance created: Eyes Caretaker is running")
         pass
 
     def notify(self, title: str, message: str) -> None:
