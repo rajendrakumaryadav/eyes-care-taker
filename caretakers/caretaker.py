@@ -8,6 +8,7 @@ import caretakers.time_moniter as time_moniter
 
 class caretaker:
     def __init__(self) -> None:
+        # self.run()
         pass
 
     def notify(self, title: str, message: str) -> None:
@@ -22,13 +23,10 @@ class caretaker:
 
     def run(self) -> None:
         while True:
-            current_time = time_moniter.time_moniter.start(self)
-
-            self.notify(
-                title="Eyes Caretaker",
-                message="""Watch away for 20 seconds.\nI will be back after \
-20 minuts.""",
-            )
-            time.sleep(current_time + (2 * 60))
-            time_moniter.reset_time()
-            self.run(self)
+            self.notify("Eyes Caretaker", "Watch away for 20 seconds\n\
+I will be back after 20 minuts.")
+            time.sleep(60 * 20)  # 20 min
+            time_moniter.time_moniter().reset_time()  # reset time
+            print(
+                f"Time counter is resetting \
+                    {time_moniter.time_moniter.start()}")
