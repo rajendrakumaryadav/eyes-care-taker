@@ -35,4 +35,4 @@ I will be back after 20 minuts.")
             time_moniter.time_moniter().reset_time()  # reset time
             print(
                 f"Time counter is reseted at \
-                    {time_moniter.time_moniter.start_t()}")
+                    {time_moniter.time_moniter.start_t(self)}")
