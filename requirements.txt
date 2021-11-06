@@ -1,2 +1,2 @@
 plyer==2.0.0
-dbus-python==1.2.0
+dbus-python==1.2.18
