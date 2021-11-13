@@ -19,4 +19,4 @@
 
   * dbus-python is used in linux to pass message to dbus.
 
-  **_ This is a Doctor recommanded eyes care steps to have a stress free eyes _**
+  ** This is a Doctor recommanded eyes care steps to have a stress free eyes **
